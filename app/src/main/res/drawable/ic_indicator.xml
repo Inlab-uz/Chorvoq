@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:left="30dp"
+    android:right="30dp">
+  <vector
+      android:width="100dp"
+      android:height="3dp"
+      android:viewportWidth="100"
+      android:viewportHeight="3">
+    <path
+        android:pathData="M0,3C0,1.343 1.343,0 3,0H97C98.657,0 100,1.343 100,3H0Z"
+        android:fillColor="#03989E"/>
+  </vector>
+</item>
+</layer-list>

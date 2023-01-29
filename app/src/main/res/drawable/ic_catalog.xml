@@ -1,0 +1,24 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+      <vector android:width="24dp" android:height="24dp" android:viewportWidth="30" android:viewportHeight="30">
+          <path android:fillColor="#1E88E5"
+              android:pathData="M3.75 3.75H13.7531V13.7531H3.75V3.75ZM3.75 16.2469H13.7531V26.25H3.75V16.2469ZM16.2469 3.75H26.25V13.7531H16.2469V3.75ZM16.2469 16.2469H26.25V26.25H16.2469V16.2469Z" />
+      </vector>
+    </item>
+    <item android:state_checked="true">
+        <vector android:width="24dp" android:height="24dp" android:viewportWidth="30" android:viewportHeight="30">
+            <path android:fillColor="#1E88E5"
+                android:pathData="M3.75 3.75H13.7531V13.7531H3.75V3.75ZM3.75 16.2469H13.7531V26.25H3.75V16.2469ZM16.2469 3.75H26.25V13.7531H16.2469V3.75ZM16.2469 16.2469H26.25V26.25H16.2469V16.2469Z" />
+        </vector>
+
+    </item>
+    <item>
+        <vector android:width="24dp" android:height="24dp" android:viewportWidth="30" android:viewportHeight="30">
+            <path android:fillColor="#9B9B9B"
+                android:pathData="M3.75 3.75H13.7531V13.7531H3.75V3.75ZM3.75 16.2469H13.7531V26.25H3.75V16.2469ZM16.2469 3.75H26.25V13.7531H16.2469V3.75ZM16.2469 16.2469H26.25V26.25H16.2469V16.2469Z" />
+
+        </vector>
+
+    </item>
+</selector>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <inset android:drawable="@drawable/img_bg_user"
+            android:insetTop="10dp"
+            android:insetBottom="20dp"/>
+    </item>
+    <item android:state_checked="true">
+        <inset android:drawable="@drawable/img_bg_user"
+            android:insetTop="10dp"
+            android:insetBottom="20dp"/>
+    </item>
+    <item>
+        <inset android:drawable="@drawable/i_user"
+            android:insetTop="15dp"
+            android:insetBottom="25dp"/>
+    </item>
+</selector>

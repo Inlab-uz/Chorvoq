@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/itemProgramsList"
+    android:layout_height="150dp"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_san_oqtosh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/imgMinus"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/img_minus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+            app:layout_constraintBottom_toBottomOf="@+id/imgMinus"
+            app:layout_constraintEnd_toStartOf="@+id/imgPlus"
+            app:layout_constraintStart_toEndOf="@+id/imgMinus"
+            app:layout_constraintTop_toTopOf="@+id/imgMinus" />
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/imgPlus"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/img_plus"
+            android:layout_marginStart="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgMinus"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tileUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Oqtosh sanatoriya"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/btn_filter" />
+            <!--            <ImageView-->
+            <!--                android:src="@drawable/icn_star"-->
+            <!--                android:layout_width="24dp"-->
+            <!--                android:layout_gravity="end"-->
+            <!--                android:layout_height="24dp"/>-->
+            <!--            <ImageView-->
+            <!--                android:src="@drawable/icn_star"-->
+            <!--                android:layout_width="24dp"-->
+            <!--                android:layout_gravity="end"-->
+            <!--                android:layout_height="24dp"/>-->
+            <!--            <ImageView-->
+            <!--                android:src="@drawable/icn_star"-->
+            <!--                android:layout_width="24dp"-->
+            <!--                android:layout_gravity="end"-->
+            <!--                android:layout_height="24dp"/>-->
+            <!--            <ImageView-->
+            <!--                android:src="@drawable/icn_star"-->
+            <!--                android:layout_width="24dp"-->
+            <!--                android:layout_gravity="end"-->
+            <!--                android:layout_height="24dp"/>-->
+        </LinearLayout>
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="Taxminiy xarajat:\n 190 000 so'm"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

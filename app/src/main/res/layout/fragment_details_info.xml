@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="4dp"
+    android:layout_width="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:elevation="2dp"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:text="Yaqin atrofdagi Sanatoriyalar"
+            android:textColor="@color/black" />
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="15dp"
+            app:cardElevation="0dp"
+            android:id="@+id/holderMap"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="4dp"
+            android:layout_height="wrap_content">
+            <fragment
+                android:id="@+id/musicNavHostFragment"
+                android:name="uz.smd.marketplatform.ui.MapViewFragment"
+                android:layout_width="match_parent"
+                android:layout_height="140dp" />
+        </androidx.cardview.widget.CardView>
+
+        <include layout="@layout/layout_destination" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingBottom="10dp"
+            android:background="#fff"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="6dp"
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                android:text="Qo'shimcha ma'lumotlar"
+                android:textColor="@color/black" />
+            <TextView
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:background="@drawable/ic_rectangle_50_gray"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oreder id - #1113"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#616161"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="#fff"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/list"
+            android:paddingBottom="204dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/layout_details_info" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

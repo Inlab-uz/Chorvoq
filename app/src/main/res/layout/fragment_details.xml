@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0.5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:elevation="8dp">
+
+            <include layout="@layout/layout_destination" />
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/musicNavHostFragment"
+            android:name="uz.smd.marketplatform.ui.MapViewFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="104dp"
+            tools:ignore="FragmentTagUsage" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_back_with_bg"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/btnGps"
+        android:layout_marginEnd="15dp"
+        android:paddingBottom="15dp"
+        app:layout_anchorGravity="end"
+        android:layout_gravity="top"
+        app:layout_anchor="@id/viewBottomAccepted"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_gps"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/dimBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0.5dp"
+        android:background="#f0eff4"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/slidingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="130dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/playerFragmentContainer"
+            android:name="uz.smd.marketplatform.ui.main.details.DetailsInfoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <include android:id="@+id/viewBottomAccepted" layout="@layout/layout_bottom_accepted" />
+    <include android:id="@+id/viewBottom" layout="@layout/layout_bottom" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

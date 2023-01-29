@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal">
+
+    <TextView
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:id="@+id/btnBottom1"
+        android:paddingTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="@color/bottom_menu_color"
+        android:gravity="center"
+        android:text="Asosiy\n" />
+    <TextView
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:id="@+id/btnBottom2"
+        android:paddingTop="15dp"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/bottom_menu_color"
+        android:gravity="center"
+        android:text="Bo'limlar\n" />
+    <TextView
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:id="@+id/btnBottom3"
+        android:paddingTop="15dp"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/bottom_menu_color"
+        android:gravity="center"
+        android:text="Sevimli\n" />
+    <TextView
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:id="@+id/btnBottom4"
+        android:paddingTop="15dp"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/bottom_menu_color"
+        android:text="Profil\n" />
+
+
+</LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CE000000"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+        android:orientation="vertical">
+
+        <TextView
+android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="19dp"
+            android:text="Mening Profilim"
+            android:textColor="#fff000"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textStyle="bold" />
+
+        <!--todo заменить на svg-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/iv_profile_avatar"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_marginVertical="20dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_circle_gray"
+                    app:srcCompat="@drawable/i_users"
+                    app:tint="@color/iGray" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_profile_name"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:text="Siddiqov Sadriddin"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textTypeProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="+998 90 278 50 95"
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:textColor="#939393" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_profile_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#939393"
+            android:textSize="13sp"
+            tools:text="Profile Error" />
+
+        <RatingBar
+            android:id="@+id/rb_profile_rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="11dp"
+            android:isIndicator="true"
+            android:stepSize="1"
+            android:theme="@style/RatingBar"
+            android:rating="3" />
+
+        <LinearLayout
+            android:id="@+id/LL_profile_actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="62dp">
+
+            <LinearLayout
+                android:id="@+id/tv_profile_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:tint="@color/white"
+                    style="@style/ProfileIcons"
+                    android:src="@drawable/img_settings" />
+
+                <TextView
+                    style="@style/Profile.Action"
+                    android:text="Sozlamalar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_profile_favorites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/ProfileIcons"
+                    android:src="@drawable/i_heart" />
+
+                <TextView
+                    style="@style/Profile.Action"
+                    android:text="Profile Avatar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_profile_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:tint="@color/white"
+                    style="@style/ProfileIcons"
+                    android:src="@drawable/img_my_order" />
+
+                <TextView
+                    style="@style/Profile.Action"
+                    android:text="Sayoxatlar tarixi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_profile_my_responses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:tint="@color/white"
+                    style="@style/ProfileIcons"
+                    android:src="@drawable/img_volume" />
+
+                <TextView
+                    style="@style/Profile.Action"
+                    android:text="Yangiliklar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_profile_my_ce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/ProfileIcons"
+                    android:src="@drawable/img_truck" />
+
+                <TextView
+                    style="@style/Profile.Action"
+                    android:text="Transport bekatlari" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_profile_my_objects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/ProfileIcons"
+                    android:src="@drawable/ic_grid_my_objects" />
+
+                <TextView
+                    style="@style/Profile.Action"
+                    android:text="Izoxlarim" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_profile_app_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/ProfileIcons"
+                    android:src="@drawable/ic_call_center" />
+
+                <TextView
+                    style="@style/Profile.Action"
+                    android:text="Biz bilan bog'lanish" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_profile_reputation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:visibility="gone"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/ProfileIcons"
+                    android:src="@drawable/img_star" />
+
+                <TextView
+                    style="@style/Profile.Action"
+                    android:text="Reputation" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_profile_users"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/ProfileIcons"
+                    android:src="@drawable/i_user" />
+
+                <TextView
+                    style="@style/Profile.Action"
+                    android:text="Users" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_profile_changePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:visibility="gone"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/ProfileIcons"
+                    android:src="@drawable/img_lock" />
+
+                <TextView
+                    style="@style/Profile.Action"
+                    android:text="Password Change" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_profile_quit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/ProfileIcons"
+                    android:src="@drawable/ic_exit"
+                    app:tint="@color/new_red" />
+
+                <TextView
+                    style="@style/Profile.Action"
+                    android:text="Chiqish"
+                    android:textColor="@color/new_red" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
