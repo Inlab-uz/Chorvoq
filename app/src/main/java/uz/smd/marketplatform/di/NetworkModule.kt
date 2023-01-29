@@ -18,7 +18,8 @@ import javax.inject.Singleton
 @Module
 @InstallIn(ApplicationComponent::class)
 object NetworkModule {
-    private const val URL = "https://pass.su/api/"
+//    private const val URL = "https://pass.su/api/"
+
 
     @Provides
     @Singleton
